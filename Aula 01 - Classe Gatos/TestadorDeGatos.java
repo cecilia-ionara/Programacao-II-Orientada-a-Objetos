@@ -8,14 +8,23 @@ public class TestadorDeGatos {
 		//g1.qtdComidaDisponivel = 3;
 		//g1.sono = true;
 		
+		//chamando os metodos
+		g1.miar();
+		g1.comer();
+		g1.dormir();
+		
+		//teste
 		System.out.println("Nome: " + g1.nome);
 		System.out.println("Comida: " + g1.qtdComidaDisponivel);
 		System.out.println("Sono: " + g1.sono);
+		
+		System.out.println("\n");
 		
 		Gato g2 = new Gato("Drácula", 2, true);
 		
 		System.out.println("Nome: " + g2.nome);
 		System.out.println("Comida: " + g2.qtdComidaDisponivel);
 		System.out.println("Sono: " + g2.sono);
+		
 	}
 }

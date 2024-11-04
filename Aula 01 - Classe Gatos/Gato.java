@@ -22,7 +22,7 @@ public class Gato {
 	}
 	
 	public void comer() {
-		this.qtdComidaDisponivel -= this.qtdComidaDisponivel; //tira um quando ele comer
+		this.qtdComidaDisponivel = this.qtdComidaDisponivel - 1; //tira um quando ele comer
 	}
 	
 	public void dormir() {
