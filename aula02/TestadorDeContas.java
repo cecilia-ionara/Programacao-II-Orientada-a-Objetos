@@ -4,11 +4,9 @@ public class TestadorDeContas {
 	public static void main(String[] args) {
 		
 		Cliente cl1 = new Cliente("Cecília", "Ionara", "042.701.612-64");
-		
 		Conta c1 = new Conta(1200, 2000.2, cl1);
 		
 		Cliente cl2 = new Cliente("Maria", "Alice", "042.701.612-64");
-		
 		Conta c2 = new Conta(1000, 2000.2, cl2);
 		
 		

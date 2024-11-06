@@ -21,20 +21,23 @@ public class Conta {
 	}
 	
 	public Boolean sacar(Double quantidade) {
-		if (quantidade > 0.0) {
-			if (quantidade <= this.saldo) {
-				this.saldo -= quantidade; 
-				return true;	
-			} else if (quantidade <=  this.saldo + this.limite) {
-				quantidade -= this.saldo;
-				this.saldo = 0.0;
-				this.limite -= quantidade;
+		if (quantidade > 0) {	
+			if (this.limite < Conta.limiteMaximo) {
+				Double diferenca = Conta.limiteMaximo - this.limite;
+				if (diferenca < quantidade) {
+					this.limite = Conta.limiteMaximo;
+					quantidade -= diferenca;
+					this.saldo += quantidade;
+					return true;
+				} else {
+					this.limite += quantidade;
+					return true;
+				}
+			} else {
+				this.saldo += quantidade;
 				return true;
-			
-			} else 
-				return false;
-		} else 
-			return false;
+			}           
+		} else return false;
 	}
 	
 	public Boolean depositar(Double quantidade) {
@@ -61,4 +64,5 @@ public class Conta {
 		destino.depositar(valor);
 		return true;
 	}
+	
 }
