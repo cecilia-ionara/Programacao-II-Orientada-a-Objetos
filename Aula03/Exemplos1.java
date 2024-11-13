@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Exemplos1 {
 	public static void main(String[] args) {
 		
-		Sc anner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Informe o nome da pessoa: ");
 		String nome = sc.next();
@@ -16,15 +16,16 @@ public class Exemplos1 {
 		
 		Pessoa p = new Pessoa(nome, idade);
 		
-		p.fazAniversario();
-		
-		System.out.println("O seu nome é " + p.nome+", e sua idade é "+p.idade);
-		
 		Porta p1 = new Porta(2.3,4.3,3.4);
 		p1.abrir();
 		p1.fechar();
 		p1.pintar(Cor.AZUL);
+		System.out.println(p1);
 		
-		//System.out.println(p1);
+		Casa c1 = new Casa(p);
+		System.out.println(c1);
+
+		
+		sc.close();
 	}
 }

@@ -14,7 +14,7 @@ public class Pessoa {
 		}
 		
 		public String toString() {
-			return "O seu nome é "+this.nome+" e sua idade é "+this.idade;
+			return ""+this.nome+" e sua idade é "+this.idade;
 		}
 }
 
