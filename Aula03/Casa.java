@@ -28,6 +28,28 @@ public class Casa {
 		this.porta3 = new Porta(0.3,2.0,0.2);
 	}
 	
+	public void pintarCasa(Cor novaCorDaCasa) {
+		this.corCasa = novaCorDaCasa;
+		this.porta1.pintar(novaCorDaCasa);
+		this.porta2.pintar(novaCorDaCasa);
+		this.porta3.pintar(novaCorDaCasa);
+	}
+	
+	public Integer qtdPortasEstaoAbertas() {
+		Integer i = 0;
+		if (this.porta1.aberta)
+			i++;
+		if (this.porta2.aberta)
+			i++;
+		if (this.porta3.aberta)
+			i++;
+		return i;
+	}
+	
+	public void alterarProprietario (Pessoa novoProprietario) {
+		this.proprietario = novoProprietario;
+	}
+	
 	public String toString() {
 		return "Casa: "+ this.proprietario + "\n"
 				+ "Cor da casa: " + this.corCasa + "\n"
