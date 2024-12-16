@@ -8,8 +8,9 @@ public class Animal {
 	protected Double peso;
 	protected Double idade;
 	
-	public Animal(Double p) {
+	public Animal(Double p, Double i) {
 		this.peso = p;
+		this.idade = i;
 	}
 	
 	public void corre() {

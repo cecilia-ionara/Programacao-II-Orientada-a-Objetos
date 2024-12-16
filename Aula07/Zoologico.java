@@ -8,11 +8,11 @@ public class Zoologico {
 	}
 	
 	public static void main(String[] args) {
-		Animal a1 = new Animal(1.2);
+		Animal a1 = new Animal(1.2, 9.2);
 		a1.corre();
-		Animal a2 = new Animal(5.2);
+		Animal a2 = new Animal(5.2,2.0);
 		a2.corre();
-		Ave av1 = new Ave(0.9);
+		Ave av1 = new Ave(0.9, 1.2);
 		av1.corre();
 		
 		Zoologico.pesarAnimal(a1);
