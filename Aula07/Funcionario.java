@@ -1,6 +1,6 @@
 package Aula07;
 
-public class Funcionario {
+public abstract class Funcionario {  //abstrata impede que crie construtor vazio pra ca, apenas pelas subclass
 	protected String nome;
 	protected String cpf;
 	protected Double salario;
