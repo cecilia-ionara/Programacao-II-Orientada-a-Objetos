@@ -1,12 +1,16 @@
 package Aula09;
 
-public class Gerente extends Funcionario {
+public abstract class Gerente extends Funcionario {
 
 	public Gerente(String nome, Double salario) {
 		super(nome, salario);
 	}
+	
+	public abstract Double calcularAposentadoria();
+	
 	@Override
 	public Double calcularBonificacao() {
-		return this.salario*0.15;
+		return super.calcularBonificacao()
+				+ this.salario * 0.05;
 	}
 }
