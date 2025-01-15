@@ -4,17 +4,17 @@ public class Galinha extends Ave {
 
 	@Override
 	public void bicar() {
-		System.out.println("Você foi bicado!");
+		System.out.println("Galinha bicando ...");
 	}
 
 	@Override
 	public void mover() {
-		System.out.println("A galinha atravessou a rua");
+		System.out.println("Galinha correndo ...");
 	}
 
 	@Override
 	public void falar() {
-		System.out.println("Cocoricó");
+		System.out.println("Cocoricó ...");
 	}
 	
 }
