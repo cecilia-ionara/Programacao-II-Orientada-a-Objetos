@@ -10,13 +10,10 @@ public class PessoaJuridica extends Contribuinte {
 
 	@Override
 	public Double calculaImposto() {
-		Double imposto  = 0.0;
-		if (numeroDeFuncionarios > 10) {
-			imposto = this.rendaAnual * 0.14;
-		} else {
-			imposto = this.rendaAnual * 0.16;
-		}
-		return imposto;
+		Double taxa  = 0.16;
+		if (numeroDeFuncionarios > 10)
+			taxa = 0.14;
+		return this.rendaAnual * taxa;
 	}
 
 	public Integer getNumeroDeFuncionarios() {
