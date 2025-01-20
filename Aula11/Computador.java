@@ -4,14 +4,16 @@ public abstract class Computador {
 	protected String marca;
 	protected Integer memoriaRAM;
 	protected String placaGrafica;
-	protected Boolean ligado;
+	protected Boolean ligado = false;
 	
 	public void ligar() {
-		ligado = true;
+		this.ligado = true;
+		System.out.println("Computador ligado");
 	} 
 	
 	public void desligar() {
-		ligado = false;
+		this.ligado = false;
+		System.out.println("Computador desligado");
 	}
 
 	@Override

@@ -16,6 +16,12 @@ public class Notebook extends Computador {
 	public void setTamanhoTela(Double tamanhoTela) {
 		this.tamanhoTela = tamanhoTela;
 	}
+	@Override
+	public String toString() {
+		return "Notebook [capacidadeBateria=" + capacidadeBateria + ", tamanhoTela=" + tamanhoTela + ", toString()="
+				+ super.toString() + "]";
+	}
+	
 	
 	
 }
