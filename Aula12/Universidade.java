@@ -26,7 +26,7 @@ public class Universidade {
 	//como é uma composicao o new departamento é criado aqui dentro, sendo assim totalmente dependente da Universidade
 	//COMPOSICAO indica onde o new vai ser criado, onde a seta preta aponta
 	public void adicionaDepartamento(String nome) {
-		this.departamentos.add( new Departamento(nome));
+		this.departamentos.add(new Departamento(nome));
 	}
 	
 	@Override
