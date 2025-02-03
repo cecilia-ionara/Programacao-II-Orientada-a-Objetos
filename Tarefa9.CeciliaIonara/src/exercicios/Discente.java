@@ -27,7 +27,7 @@ public class Discente {
 
 	@Override
 	public String toString() {
-		return "Discente [nome=" + nome + ", matricula=" + matricula + "]";
+		return "\nDiscente [nome=" + nome + ", matricula=" + matricula + "]";
 	}
 	
 	

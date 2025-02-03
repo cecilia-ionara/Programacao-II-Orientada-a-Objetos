@@ -8,7 +8,6 @@ public class Turma {
 	private List<Discente> discentes;
 	
 	public Turma(Professor professor) {
-		super();
 		this.professor = professor;
 		this.discentes = new ArrayList<Discente>();
 	}
