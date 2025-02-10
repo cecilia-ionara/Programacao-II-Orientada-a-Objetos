@@ -17,7 +17,13 @@ public class OfertaDisciplina {
 		this.docente = docente;
 		this.discentes = new ArrayList<Discente>();
 	}
-
+	public OfertaDisciplina(String nome, String periodo, Disciplina disciplina, Docente docente, List<Discente> discentes) {
+		this.nome = nome;
+		this.periodo = periodo;
+		this.disciplina = disciplina;
+		this.docente = docente;
+		this.discentes = discentes;
+	}
 	public String getNome() {
 		return nome;
 	}
