@@ -21,7 +21,8 @@ public class Curso {
 	}
 
 	public void adicionarDisciplina(String nome, Double cargaHoraria) {
-		this.disciplinas.put(nome, new Disciplina(nome, cargaHoraria));
+	    Disciplina d1 = new Disciplina(nome, cargaHoraria);
+	    this.matricula.put(codigo, d1);
 	}
 
 	public void adicionarMatricula(Matricula matricula) {
