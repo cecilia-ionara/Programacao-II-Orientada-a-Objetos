@@ -20,13 +20,13 @@ public class Curso {
 		this.disciplinas = new HashMap<String, Disciplina>();
 	}
 
-	public void adicionarDisciplina(String nome, String cargaHoraria) {
+	public void adicionarDisciplina(String nome, Double cargaHoraria) {
 		this.disciplinas.put(nome, new Disciplina(nome, cargaHoraria));
 	}
 
-	//public void adicionarMatricula() {
-	//corrigir 	matricula(discente.getMatricula());
-	//}
+	public void adicionarMatricula(Matricula matricula) {
+	    this.matricula.put(matricula.getNumero() + "", matricula);
+	}
 
 	public String getNome() {
 		return nome;

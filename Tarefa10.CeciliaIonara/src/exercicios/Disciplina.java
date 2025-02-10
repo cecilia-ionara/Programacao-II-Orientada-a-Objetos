@@ -2,9 +2,9 @@ package exercicios;
 
 public class Disciplina {
 	private String nome;
-	private String cargaHoraria;
+	private Double cargaHoraria;
 	
-	public Disciplina(String nome, String cargaHoraria) {
+	public Disciplina(String nome, Double cargaHoraria) {
 		this.nome = nome;
 		this.cargaHoraria = cargaHoraria;
 	}
@@ -15,10 +15,10 @@ public class Disciplina {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getCargaHoraria() {
+	public Double getCargaHoraria() {
 		return cargaHoraria;
 	}
-	public void setCargaHoraria(String cargaHoraria) {
+	public void setCargaHoraria(Double cargaHoraria) {
 		this.cargaHoraria = cargaHoraria;
 	}
 	@Override

@@ -16,7 +16,6 @@ public class Faculdade {
 	public void adicionarCurso(String nome, Double duracaoTotal, Tecnico tecnico) {
 		cursos.add(new Curso(nome, duracaoTotal, tecnico));
 	}
-	
 
 	public String getNome() {
 		return nome;

@@ -14,7 +14,7 @@ public class Universidade {
 		this.faculdades = new HashMap<String, Faculdade>();
 	}
 	
-	public void adicionarFaculdades(String nome, String sigla) {
+	public void adicionarFaculdade(String nome, String sigla) {
 		this.faculdades.put(sigla, new Faculdade(nome, sigla));
 	}
 	
